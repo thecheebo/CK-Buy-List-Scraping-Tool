@@ -1,0 +1,23 @@
+f = open('test.txt', 'r')
+#r for read
+#w for write
+
+print(f.name)
+f.close
+
+with open('text.txt', 'r') as f:
+    f_contents = f.read() or f.readline()
+    print(f_contents, end='')
+    
+     f_contents = f.read(100) #read 100 lines 
+    print(f_contents, end='')
+    
+     f_contents = f.read(100) #read next 100 lines 
+    print(f_contents, end='')
+    
+ with open('text.txt', 'r') as f: #could be memory issue
+ 
+    for line in f:
+    print(line, end="")
+    
+   
